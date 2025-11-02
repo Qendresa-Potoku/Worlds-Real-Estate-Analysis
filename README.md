@@ -65,7 +65,7 @@ The following preprocessing steps were applied to clean and prepare the real est
    - Parsed `title` to extract `property_type` (e.g., apartment, house, villa)
 
 5. **Dimension Reduction**
-   - Performed optional PCA for reducing dimensionality (if needed)
+   - Performed optional PCA for reducing dimensionality
 
 6. **Feature Engineering**
    - Created `price_per_m2` and capped extreme values
