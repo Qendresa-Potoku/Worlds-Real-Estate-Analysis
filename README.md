@@ -1,8 +1,8 @@
-# World Real Estate Data Preprocessing Project
+# World Real Estate Data Analysis Project
 
 ## Overview
 
-This project focuses on preparing and transforming a real estate dataset to enable country-level price comparison and gain insight into international property market trends. It involves comprehensive data cleaning, feature transformation, and quality assurance using real-world listings sourced from multiple global regions.
+This project cleans, transforms, and analyzes a large global real estate dataset to compare property prices across countries. The workflow includes fixing inconsistent data, extracting useful features, handling missing values, detecting outliers, and preparing the dataset for further statistical analysis and visualization.
 
 
 ---
@@ -112,7 +112,7 @@ The following preprocessing steps were applied to clean and prepare the real est
 5.  **Post-Outlier Analysis**
     - Checked skewness and distribution shapes after removing outliers
         
-6.  **Yeo–Johnson Transformation**
+6.  **Log and Yeo–Johnson Transformation**
     - Applied power transformation to reduce skewness and normalize variables
 
 ---
