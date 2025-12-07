@@ -61,7 +61,7 @@ The following preprocessing steps were applied to clean and prepare the real est
    - Filled remaining missing values with median-based imputation
    - Ensured all retained rows had sufficient information for analysis
 
-4. ** Feature Extraction**
+4. **Feature Extraction**
    - Parsed `title` to extract `property_type` (e.g., apartment, house, villa)
 
 5. **Dimension Reduction**
@@ -90,13 +90,41 @@ The following preprocessing steps were applied to clean and prepare the real est
     - Saved processed dataset to CSV for further analysis and visualization
 
 ---
+## Outlier Detection Summary
+
+
+1.  **Initial Inspection**
+    - Loaded the reduced dataset
+    - Reviewed descriptive statistics and visualized distributions
+        
+2.  **Z-Score Outlier Detection**
+    - Calculated Z-scores for numerical factors
+    - Flagged values outside ±3 as outliers
+        
+3.  **IQR Outlier Detection**
+    - Computed IQR for each factor
+    - Identified values outside the 1.5×IQR range
+        
+4.  **Mahalanobis Distance**
+    - Performed multivariate outlier detection using chi-square threshold
+    - Marked anomalous observations across correlated features
+        
+5.  **Post-Outlier Analysis**
+    - Checked skewness and distribution shapes after removing outliers
+        
+6.  **Yeo–Johnson Transformation**
+    - Applied power transformation to reduce skewness and normalize variables
+
+---
 
 ## Project Structure
 
 - **data/** 
   - **world_real_estate_data.csv** 
-  - **cleaned_world_real_estate_data.csv** 
+  - **cleaned_world_real_estate_data.csv**
+  - **reduced_world_real_estate_data.csv** 
 - **data_preprocessing.ipynb**
+- **outlier_detection.ipynb**
 - **README.md** 
 
 ---
