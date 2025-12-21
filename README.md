@@ -132,12 +132,12 @@ The following preprocessing steps were applied to clean and prepare the real est
     - Compared countries by various factors
     - Analyzed the top 5 and bottom 5 countries for each factor
 
-    (![Analysis 1](analysis-1.PNG))
+    ![Analysis 1](analysis-1.PNG)
 
 2.  **In-depth Analysis**
     - See market trends and find top investment pick
 
-    (![alt text](analysis-2.PNG))
+    ![alt text](analysis-2.PNG)
         
 
 ---
