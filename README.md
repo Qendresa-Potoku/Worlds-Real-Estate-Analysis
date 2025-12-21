@@ -125,6 +125,23 @@ The following preprocessing steps were applied to clean and prepare the real est
 
 ---
 
+## Data Analysis Summary
+
+
+1.  **Initial Analysis**
+    - Compared countries by various factors
+    - Analyzed the top 5 and bottom 5 countries for each factor
+
+    (![Analysis 1](analysis-1.PNG))
+
+2.  **In-depth Analysis**
+    - See market trends and find top investment pick
+
+    (![alt text](analysis-2.PNG))
+        
+
+---
+
 ## Project Structure
 
 - **data/** 
