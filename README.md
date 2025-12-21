@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project cleans, transforms, and analyzes a large global real estate dataset to compare property prices across countries. The workflow includes fixing inconsistent data, extracting useful features, handling missing values, detecting outliers, and preparing the dataset for further statistical analysis and visualization.
+This project cleans, transforms, and analyzes a large global real estate dataset to compare countries and see market trends. The workflow includes fixing inconsistent data, extracting useful features, handling missing values, detecting outliers, and preparing the dataset for further statistical analysis and visualization.
 
 
 ---
@@ -104,16 +104,24 @@ The following preprocessing steps were applied to clean and prepare the real est
 3.  **IQR Outlier Detection**
     - Computed IQR for each factor
     - Identified values outside the 1.5×IQR range
+
+   <img width="2490" height="820" alt="image" src="https://github.com/user-attachments/assets/48262e7e-bf0e-4b65-8aaa-07e4e2bc055d" />
+
         
 4.  **Mahalanobis Distance**
     - Performed multivariate outlier detection using chi-square threshold
     - Marked anomalous observations across correlated features
+
+   <img width="2490" height="820" alt="image" src="https://github.com/user-attachments/assets/cd10c259-a652-4cc1-abcf-73a6ff6971b4" />
+
+   - Removed outliers detected by Mahalanobis
         
 5.  **Post-Outlier Analysis**
     - Checked skewness and distribution shapes after removing outliers
-        
-6.  **Log and Yeo–Johnson Transformation**
-    - Applied power transformation to reduce skewness and normalize variables
+
+   <img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/c60442b7-b7e2-465f-b951-5abde3f06827" />
+   <img width="1489" height="1189" alt="image" src="https://github.com/user-attachments/assets/086d3f47-d020-40c8-949b-bff7761173a5" />
+
 
 ---
 
@@ -122,7 +130,8 @@ The following preprocessing steps were applied to clean and prepare the real est
 - **data/** 
   - **world_real_estate_data.csv** 
   - **cleaned_world_real_estate_data.csv**
-  - **reduced_world_real_estate_data.csv** 
+  - **reduced_world_real_estate_data.csv**
+  - **final_cleaned_world_real_estate_data.csv**
 - **data_preprocessing.ipynb**
 - **outlier_detection.ipynb**
 - **README.md** 
